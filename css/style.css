@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Section */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+#logo{
+    margin: 3px 7px;
+
+}
+#logo img{
+    width: 65px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 11px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 11px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 654px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 723px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.87;
+    filter: contrast(73%);
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Varela Round', sans-serif;
+
+}
+/* Services Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 6px;
+    border-radius: 23px;
+    background-color: rgb(252, 241, 241);
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.box{
+    cursor: pointer;
+}
+/* partner section */
+#partners-section{
+    position: relative;
+    margin-bottom: 23px;
+}
+
+#partners-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.partner-item{
+    padding: 21px;
+}
+#partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#partners img{
+    height: 100px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    border: 2px solid rgb(77, 76, 76);
+
+}
+#contact-box form{
+    width: 60%
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Class */
+
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: 'Varela Round', sans-serif;
+}
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 12px;
+    font-family: 'Varela Round', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+.submit{
+    margin:0px;
+    width: 102.5%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    margin-top: 5px;
+}
